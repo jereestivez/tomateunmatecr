@@ -11,11 +11,13 @@
 @use 'components/navbar';
 @use 'components/gallery';
 @use 'components/carousel';
+@use 'components/hero';
 
 // Layout
 @use 'layout/header';
 @use 'layout/footer';
 @use 'layout/forms';
+
 
 // Base (responsive)
 @use 'base/responsive';

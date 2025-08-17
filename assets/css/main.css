@@ -255,6 +255,21 @@ a {
     aspect-ratio: 3/4;
   }
 }
+/* ----- Hero section ----- */
+.hero {
+  position: relative;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.hero .hero-content {
+  position: relative;
+  background: #2a7f40;
+  color: white;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
 /* ----- Header ----- */
 header {
   display: flex;
