@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/* =============================================
+   CONFIGURACIONES GLOBALES
+   ============================================= */
+/* Importación de fuentes de Google */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+/* Reset básico y box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tamaño de fuente responsive */
+:root {
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+/* =============================================
+   ESTRUCTURA PRINCIPAL
+   ============================================= */
+/* ----- Header ----- */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 5%;
+  width: 100%;
+}
+header h1 {
+  margin: 0 0 20px 0;
+  color: #2a7f40;
+}
+
+/* ----- Footer ----- */
+footer {
+  list-style-type: none;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* =============================================
+   COMPONENTES REUTILIZABLES
+   ============================================= */
+/* ----- Logo ----- */
+.logo {
+  height: clamp(100px, 20vh, 200px);
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+/* ----- Iconos sociales ----- */
+.social-icon {
+  height: clamp(30px, 8vw, 50px);
+  width: auto;
+  transition: transform 0.3s ease;
+}
+@media (hover: hover) {
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* ----- Imágenes de productos ----- */
+.producto-img {
+  height: auto;
+  max-height: 25vh;
+  width: 100%;
+  max-width: 300px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* =============================================
+   TIPOGRAFÍA Y ELEMENTOS BÁSICOS
+   ============================================= */
+h1 {
+  font-family: sans-serif;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+  font-family: Rubik;
+}
+
+a {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+/* =============================================
+   COMPONENTES DE NAVEGACIÓN
+   ============================================= */
+/* ----- Navegación principal ----- */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  background-color: #2a7f40;
+  padding: 1rem 0;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.main-nav li {
+  list-style: none;
+}
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.main-nav a:hover, .main-nav a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+@media (hover: hover) {
+  .main-nav a:hover {
+    color: #2a7f40;
+    background-color: #f0f0f0;
+  }
+}
+
+/* =============================================
+   COMPONENTES DE FORMULARIOS
+   ============================================= */
+.form-container {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+.form-container h1 {
+  color: #2a7f40;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+.form-group input[type=text],
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+/* ----- Botones ----- */
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.btn-limpiar, .btn-enviar {
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* =============================================
+   COMPONENTES DE GALERÍA
+   ============================================= */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  max-width: 1200px;
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  justify-items: center;
+}
+.galeria .item-galeria {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #f8f8f8;
+  width: 100%;
+}
+.galeria .img-galeria {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+  padding: 10px;
+  display: block;
+  background-color: #f0f0f0;
+}
+
+/* =============================================
+   COMPONENTES ESPECIALES
+   ============================================= */
+/* ----- Hero section ----- */
+.hero {
+  position: relative;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.hero .hero-content {
+  position: relative;
+  background: #2a7f40;
+  color: white;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* =============================================
+   MEDIA QUERIES - DISEÑO RESPONSIVO
+   ============================================= */
+/* ----- Mobile (hasta 767px) ----- */
+@media (max-width: 767px) {
+  .main-nav {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.5rem;
+  }
+  .logo {
+    height: 15vh;
+  }
+  header {
+    padding: 1rem;
+  }
+  .form-container {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .btn-limpiar, .btn-enviar {
+    width: 100%;
+  }
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 1rem 0.5rem;
+  }
+}
+/* ----- Tablet (768px - 1023px) ----- */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .producto-img {
+    max-width: 250px;
+  }
+  .main-nav {
+    gap: 0.75rem;
+  }
+  .main-nav a {
+    padding: 0.5rem;
+  }
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+/* ---------CARRUSEL---------*/
+#manualCarousel {
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+
+.carousel-item {
+  height: 100%;
+}
+.carousel-item img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+}
+
+/* Ajustes para tablets */
+@media (max-width: 1024px) {
+  #manualCarousel {
+    max-width: 90%;
+  }
+  .carousel-inner {
+    aspect-ratio: 3/2;
+  }
+}
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+  #manualCarousel {
+    max-width: 100%;
+    border-radius: 0;
+    margin: 1rem 0;
+  }
+  .carousel-inner {
+    aspect-ratio: 1/1;
+  }
+  .carousel-item img {
+    object-position: center top;
+  }
+}
+/* Ajustes para móviles pequeños */
+@media (max-width: 480px) {
+  .carousel-inner {
+    aspect-ratio: 3/4;
+  }
+}
+/* ----- Desktop (1024px - 1199px) ----- */
+@media (min-width: 1024px) {
+  .producto-img {
+    max-width: 350px;
+  }
+  .main-nav {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+/* ----- Desktop grande (1200px+) ----- */
+@media (min-width: 1200px) {
+  :root {
+    font-size: 18px;
+  }
+  .producto-img {
+    max-width: 400px;
+  }
+  .form-container {
+    max-width: 900px;
+  }
+  .galeria-galeria {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

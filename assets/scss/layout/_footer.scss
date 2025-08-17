@@ -1,0 +1,10 @@
+/* ----- Footer ----- */
+footer { 
+  list-style-type: none;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,21 @@
+/* Importación de fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+// Colores
+$color-primary: #2a7f40;
+$color-secondary: blueviolet;
+$color-light-bg: #f8f9fa;
+
+// Tipografía
+$font-main: 'Noto Sans', sans-serif;
+$font-headings: 'Rubik', sans-serif;
+
+// Breakpoints (basados en tus media queries)
+$bp-mobile: 767px;
+$bp-tablet: 1023px;
+$bp-desktop: 1200px;
+
+// Bordes
+$border-radius: 4px;
+$border-radius-lg: 8px;
+// Espaciados

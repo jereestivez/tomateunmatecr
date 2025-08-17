@@ -1,0 +1,11 @@
+/* Reset básico y box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tamaño de fuente responsive */
+:root {
+  font-size: clamp(14px, 2vw, 18px);
+}

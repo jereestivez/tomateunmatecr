@@ -1,0 +1,77 @@
+/* =============================================
+   COMPONENTES DE FORMULARIOS
+   ============================================= */
+@use '../abstracts/variables' as *;
+@use "sass:color";
+.form-container {
+  // Posicionamiento
+  margin: 2rem auto;
+  
+  // Box Model
+  padding: 2rem;
+  max-width: 800px;
+  border: 1px solid $color-light-bg;
+  border-radius: 8px;
+  
+  // Estilos visuales
+  background-color: color.adjust($color-light-bg, $lightness: 2%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    color: $color-primary;
+    font-family: $font-headings;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid color.adjust($color-light-bg, $lightness: -10%);
+    border-radius: 4px;
+    font-family: $font-main;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+
+    &:focus {
+      border-color: $color-primary;
+      outline: none;
+    }
+  }
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+// Responsive
+@media (max-width: 767px) {
+  .form-container {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    
+    .btn-limpiar, 
+    .btn-enviar {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-container {
+    max-width: 900px;
+  }
+}
