@@ -1,0 +1,80 @@
+// components/_testimonios.scss
+@use '../abstracts/variables' as *;
+
+.testimonios {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, $color-light 0%, #f8f9fa 100%);
+  text-align: center;
+
+  h2 {
+    color: $color-primary;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-family: $font-headings;
+  }
+}
+
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonio-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  
+  &::before {
+    content: '"';
+    font-size: 4rem;
+    color: $color-accent;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0.3;
+    font-family: $font-headings;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.testimonio-text {
+  font-style: italic;
+  color: $text-dark;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+  font-size: 1.1rem;
+}
+
+.testimonio-author {
+  color: $color-primary;
+  font-weight: 600;
+  font-family: $font-headings;
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .testimonios {
+    padding: 3rem 1rem;
+  }
+  
+  .testimonios-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .testimonio-card {
+    padding: 1.5rem;
+  }
+}

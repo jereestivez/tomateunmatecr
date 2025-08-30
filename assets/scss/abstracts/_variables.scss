@@ -1,14 +1,33 @@
 /* Importación de fuentes de Google */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-// Colores
-$color-primary: #2a7f40;
-$color-secondary: blueviolet;
-$color-light-bg: #f8f9fa;
-
-// Tipografía
+// FUENTES -- Tipografías principales
 $font-main: 'Noto Sans', sans-serif;
 $font-headings: 'Rubik', sans-serif;
+
+// Colores principales
+$color-primary: #1e6b34;
+$color-primary-light: #2a7f40;      
+$color-secondary: #73512a;     
+$color-accent: #c1893d;         
+$color-light: #f8f9fa;          
+$color-dark: #212529;
+$color-border:#dee2e6;           
+
+// COLORES ADICIONALES - 
+$color-light-bg: #f8f9fa;
+$bg-light: #f9f9f9;
+$bg-dark: #2a2a2a;
+
+// Colores de texto
+$text-dark: #212529;
+$text-light: #ffffff;
+$text-muted: #6c757d;
+
+// Colores de fondo
+$bg-light: #ffffff;
+$bg-dark: #343a40;
+$bg-success: #198754;
 
 // Breakpoints (basados en tus media queries)
 $bp-mobile: 767px;

@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Canastos</title>
+    <title>Tomate un mateCR - Canastos</title>
+        <!-- Favicon -->
+    <link rel="icon" href="../img/logo.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="../img/logo.jpg">
+    <link rel="shortcut icon" href="../img/logo.jpg" type="image/jpeg">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -34,42 +38,50 @@
 
     <main>
       <section class="galeria">
-    <!-- Canasto 1 -->
-    <div class="item-galeria">
-      <img src="../img/canasto cuero.webp" alt="Canasto de cuero" class="img-galeria">
-      <div class="descripcion-producto">
-        <h3>Canasto de cuero</h3>
-        <p>Cuero calidad premium para llevar tu equpo matero</p>
-      </div>
-    </div>
-    
-    <!-- Canasto 2 -->
-    <div class="item-galeria">
-      <img src="../img/eco-cuero.webp" alt="Canasto de Eco-Cuero" class="img-galeria">
-      <div class="descripcion-producto">
-        <h3>Canasto Eco-Cuero</h3>
-        <p>Canasto de Eco-Cuero, con excelentes terminaciones</p>
-      </div>
-    </div>
-    
-    <!-- Canasto 3 -->
-    <div class="item-galeria">
-      <img src="../img/canasto-Mate.webp" alt="Canasto de Mimbre" class="img-galeria">
-      <div class="descripcion-producto">
-        <h3>Canasto de Mimbre</h3>
-        <p>Canasto de mimbre. Ideal para tener en casa.</p>
-      </div>
-    </div>
-    
-    <!-- Canasto 4 -->
-    <div class="item-galeria">
-      <img src="../img/porta mate cuero.webp" alt="Porta mate para auto" class="img-galeria">
-      <div class="descripcion-producto">
-        <h3>Porta mate para auto</h3>
-        <p>Ideal para llevar el mate en el auto.</p>
-      </div>
-    </div>
-  </section>
+        <!-- Canasto 1 -->
+        <div class="item-galeria">
+          <a href="#modal-canasto1" class="image-link">
+            <img src="../img/canasto cuero.webp" alt="Canasto de cuero" class="img-galeria">
+          </a>
+          <div class="descripcion-producto">
+            <h3>Canasto de cuero</h3>
+            <p>Cuero calidad premium para llevar tu equipo matero</p>
+          </div>
+        </div>
+        
+        <!-- Canasto 2 -->
+        <div class="item-galeria">
+          <a href="#modal-canasto2" class="image-link">
+            <img src="../img/eco-cuero.webp" alt="Canasto de Eco-Cuero" class="img-galeria"> 
+          </a>
+          <div class="descripcion-producto">
+            <h3>Canasto Eco-Cuero</h3>
+            <p>Canasto de Eco-Cuero, con excelentes terminaciones</p>
+          </div>
+        </div>
+        
+        <!-- Canasto 3 -->
+        <div class="item-galeria">
+          <a href="#modal-canasto3" class="image-link">
+            <img src="../img/canasto-Mate.webp" alt="Canasto de Mimbre" class="img-galeria">
+          </a>
+          <div class="descripcion-producto">
+            <h3>Canasto de Mimbre</h3>
+            <p>Canasto de mimbre. Ideal para tener en casa.</p>
+          </div>
+        </div>
+        
+        <!-- Canasto 4 -->
+        <div class="item-galeria">
+          <a href="#modal-canasto4" class="image-link">
+            <img src="../img/porta mate cuero.webp" alt="Porta mate para auto" class="img-galeria">
+          </a>
+          <div class="descripcion-producto">
+            <h3>Porta mate para auto</h3>
+            <p>Ideal para llevar el mate en el auto.</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
   <nav aria-label="Redes sociales">
@@ -99,5 +111,55 @@
   </nav>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- ============================================= --> <!-- MODALES PARA LAS IMÁGENES -->
+<!-- ============================================= -->
+<!-- Modal Canasto 1 -->
+    <div id="modal-canasto1" class="modal">
+      <a href="#" class="modal-close"></a>
+      <div class="modal-content">
+        <img src="../img/canasto cuero.webp" alt="Canasto de cuero">
+        <div class="modal-caption">
+          <h3>Canasto de cuero genuino</h3>
+          <p>Fabricado en cuero vacuno de primera calidad. Ideal para transportar tu equipo matero con estilo y durabilidad.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Canasto 2 -->
+    <div id="modal-canasto2" class="modal">
+      <a href="#" class="modal-close"></a>
+      <div class="modal-content">
+        <img src="../img/eco-cuero.webp" alt="Canasto de Eco-Cuero">
+        <div class="modal-caption">
+          <h3>Canasto Eco-Cuero Premium</h3>
+          <p>Material ecológico de alta resistencia. Terminaciones impecables y diseño moderno.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Canasto 3 -->
+    <div id="modal-canasto3" class="modal">
+      <a href="#" class="modal-close"></a>
+      <div class="modal-content">
+        <img src="../img/canasto-Mate.webp" alt="Canasto de Mimbre">
+        <div class="modal-caption">
+          <h3>Canasto de Mimbre Artesanal</h3>
+          <p>Elaborado artesanalmente con mimbre natural. Perfecto para guardar tus mates en casa con elegancia rústica.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Canasto 4 -->
+    <div id="modal-canasto4" class="modal">
+      <a href="#" class="modal-close"></a>
+      <div class="modal-content">
+        <img src="../img/porta mate cuero.webp" alt="Porta mate para auto">
+        <div class="modal-caption">
+          <h3>Porta Mate para Auto</h3>
+          <p>Diseño práctico y seguro para transportar tu mate en el automóvil. Base antideslizante y ajustable.</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

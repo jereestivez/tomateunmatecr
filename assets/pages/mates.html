@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mates</title>
+    <title>Tomate un mateCR - Mates</title>
+        <!-- Favicon -->
+    <link rel="icon" href="../img/logo.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="../img/logo.jpg">
+    <link rel="shortcut icon" href="../img/logo.jpg" type="image/jpeg">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -31,43 +35,51 @@
     </header>
 <!--Galeria de mates-->
     <main>
-       <section class="galeria">
-    <!-- Mate 1 -->
-    <div class="item-galeria">
-      <img src="../img/matealgarrobowebp.webp" alt="MateDeAlgarrobo" class="img-galeria">
-      <div class="descripcion-producto">
-        <h3>Mate de Algarrobo</h3>
-        <p>Mate imperial de algarrobo, torneado a mano</p>
-      </div>
+<section class="galeria">
+  <!-- Mate 1 -->
+  <div class="item-galeria">
+    <a href="#modal-mate1" class="image-link">
+      <img src="../img/matealgarrobowebp.webp" alt="Mate de Algarrobo" class="img-galeria">
+    </a>
+    <div class="descripcion-producto">
+      <h3>Mate de Algarrobo</h3>
+      <p>Mate imperial de algarrobo, torneado a mano</p>
     </div>
-    
-    <!-- Mate 2 -->
-    <div class="item-galeria">
+  </div>
+  
+  <!-- Mate 2 -->
+  <div class="item-galeria">
+    <a href="#modal-mate2" class="image-link">
       <img src="../img/matecamionero.webp" alt="Mate camionero" class="img-galeria">
-      <div class="descripcion-producto">
-        <h3>Mate camionero</h3>
-        <p>Mate camionero, virola de alpaca cindelado, cuero premium</p>
-      </div>
+    </a>
+    <div class="descripcion-producto">
+      <h3>Mate camionero</h3>
+      <p>Mate camionero, virola de alpaca cincelado, cuero premium</p>
     </div>
-    
-    <!-- Mate 3 -->
-    <div class="item-galeria">
+  </div>
+  
+  <!-- Mate 3 -->
+  <div class="item-galeria">
+    <a href="#modal-mate3" class="image-link">
       <img src="../img/mateimperial.webp" alt="Mate imperial" class="img-galeria">
-      <div class="descripcion-producto">
-        <h3>Mate imperial</h3>
-        <p>Mate imperial de calabaza, con cuero croco. Calidad premium.</p>
-      </div>
+    </a>
+    <div class="descripcion-producto">
+      <h3>Mate imperial</h3>
+      <p>Mate imperial de calabaza, con cuero croco. Calidad premium.</p>
     </div>
-    
-    <!-- Mate 4 -->
-    <div class="item-galeria">
+  </div>
+  
+  <!-- Mate 4 -->
+  <div class="item-galeria">
+    <a href="#modal-mate4" class="image-link">
       <img src="../img/matetorpedo.webp" alt="Mate torpedo" class="img-galeria">
-      <div class="descripcion-producto">
-        <h3>Mate torpedo</h3>
-        <p>Mate torpedo, cuero croco, virola de alpaca cincelada.</p>
-      </div>
+    </a>
+    <div class="descripcion-producto">
+      <h3>Mate torpedo</h3>
+      <p>Mate torpedo, cuero croco, virola de alpaca cincelada.</p>
     </div>
-  </section>
+  </div>
+</section>
       </main>
    <footer>
   <nav aria-label="Redes sociales">
@@ -97,5 +109,50 @@
   </nav>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Modales para Mates -->
+<div id="modal-mate1" class="modal">
+  <a href="#" class="modal-close"></a>
+  <div class="modal-content">
+    <img src="../img/matealgarrobowebp.webp" alt="Mate de Algarrobo">
+    <div class="modal-caption">
+      <h3>Mate de Algarrobo Imperial</h3>
+      <p>Torneado artesanalmente en madera de algarrobo. Acabado premium con virola metálica.</p>
+    </div>
+  </div>
+</div>
+
+<div id="modal-mate2" class="modal">
+  <a href="#" class="modal-close"></a>
+  <div class="modal-content">
+    <img src="../img/matecamionero.webp" alt="Mate camionero">
+    <div class="modal-caption">
+      <h3>Mate Camionero Premium</h3>
+      <p>Virola de alpaca cincelada, cuero de primera calidad y base antideslizante.</p>
+    </div>
+  </div>
+</div>
+
+<div id="modal-mate3" class="modal">
+  <a href="#" class="modal-close"></a>
+  <div class="modal-content">
+    <img src="../img/mateimperial.webp" alt="Mate imperial">
+    <div class="modal-caption">
+      <h3>Mate Imperial de Calabaza</h3>
+      <p>Calabaza curada naturalmente, forrado en cuero croco genuino. Pieza exclusiva.</p>
+    </div>
+  </div>
+</div>
+
+<div id="modal-mate4" class="modal">
+  <a href="#" class="modal-close"></a>
+  <div class="modal-content">
+    <img src="../img/matetorpedo.webp" alt="Mate torpedo">
+    <div class="modal-caption">
+      <h3>Mate Torpedo Elegante</h3>
+      <p>Diseño aerodinámico, virola de alpaca cincelada y cuero croco de importación.</p>
+    </div>
+  </div>
+</div>
   </body>
 </html>

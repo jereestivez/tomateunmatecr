@@ -1,4 +1,7 @@
-/* ----- Botones ----- */
+// components/_buttons.scss - 
+@use '../abstracts/variables' as *;
+@use "sass:color";
+
 .buttons {
   display: flex;
   justify-content: flex-end;
@@ -9,8 +12,29 @@
 .btn-limpiar, .btn-enviar {
   padding: 0.8rem 1.5rem;
   border-radius: 4px;
-  font-family: 'Rubik', sans-serif;
+  font-family: $font-headings;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s;
+  border: none;
+}
+
+.btn-limpiar {
+  background-color: $color-secondary;
+  color: $text-light;
+  border: 2px solid color.adjust($color-secondary, $lightness: -5%);
+  
+  &:hover {
+    background-color: color.adjust($color-secondary, $lightness: -8%);
+  }
+}
+
+.btn-enviar {
+  background-color: $color-primary;
+  color: $text-light;
+  border: 2px solid color.adjust($color-primary, $lightness: -5%);
+  
+  &:hover {
+    background-color: $color-primary-light
+  }
 }

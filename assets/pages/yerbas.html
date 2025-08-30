@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yerbas</title>
+    <title>Tommate un mateCR - Yerbas</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../img/logo.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="../img/logo.jpg">
+    <link rel="shortcut icon" href="../img/logo.jpg" type="image/jpeg">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -33,43 +37,51 @@
     <!--Galeria Yerba-->
     
       <main>
-       <section class="galeria">
-    <!-- Yerba 1 -->
-    <div class="item-galeria">
-      <img src="../img/yerba-baldo.webp" alt="yerba-baldo" class="img-galeria">
-      <div class="descripcion-producto">
-        <h3>Yerba Baldo </h3>
-        <p>Yerba mate despalada, 1kg. Importada</p>
-      </div>
+<section class="galeria">
+  <!-- Yerba 1 -->
+  <div class="item-galeria">
+    <a href="#modal-yerba1" class="image-link">
+      <img src="../img/yerba-baldo.webp" alt="Yerba Baldo" class="img-galeria">
+    </a>
+    <div class="descripcion-producto">
+      <h3>Yerba Baldo</h3>
+      <p>Yerba mate despalada, 1kg. Importada</p>
     </div>
-    
-    <!-- Yerba 2 -->
-    <div class="item-galeria">
+  </div>
+  
+  <!-- Yerba 2 -->
+  <div class="item-galeria">
+    <a href="#modal-yerba2" class="image-link">
       <img src="../img/reiverde.webp" alt="Rei Verde" class="img-galeria">
-      <div class="descripcion-producto">
-        <h3>Yerba Rei Verde </h3>
-        <p>Yerba importada. Despalada. Version de 1kg.</p>
-      </div>
+    </a>
+    <div class="descripcion-producto">
+      <h3>Yerba Rei Verde</h3>
+      <p>Yerba importada. Despalada. Versión de 1kg.</p>
     </div>
-    
-    <!-- Yerba 3 -->
-    <div class="item-galeria">
+  </div>
+  
+  <!-- Yerba 3 -->
+  <div class="item-galeria">
+    <a href="#modal-yerba3" class="image-link">
       <img src="../img/reiverdepremium.webp" alt="Rei Verde Premium" class="img-galeria">
-      <div class="descripcion-producto">
-        <h3>Yerba Rei Verde Premium</h3>
-        <p>Yerba mate importada, despalada. 1kg.</p>
-      </div>
+    </a>
+    <div class="descripcion-producto">
+      <h3>Yerba Rei Verde Premium</h3>
+      <p>Yerba mate importada, despalada. 1kg.</p>
     </div>
-    
-    <!-- Yerba 4 -->
-    <div class="item-galeria">
+  </div>
+  
+  <!-- Yerba 4 -->
+  <div class="item-galeria">
+    <a href="#modal-yerba4" class="image-link">
       <img src="../img/yerba-carrusel.webp" alt="Yerba Canarias" class="img-galeria">
-      <div class="descripcion-producto">
-        <h3>Yerba Canarias</h3>
-        <p>La favorita de todos. Presentación de 500grs.</p>
-      </div>
+    </a>
+    <div class="descripcion-producto">
+      <h3>Yerba Canarias</h3>
+      <p>La favorita de todos. Presentación de 500grs.</p>
     </div>
-  </section>
+  </div>
+</section>
       </main>
 <footer>
   <nav aria-label="Redes sociales">
@@ -99,5 +111,50 @@
   </nav>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Modales para Yerbas -->
+<div id="modal-yerba1" class="modal">
+  <a href="#" class="modal-close"></a>
+  <div class="modal-content">
+    <img src="../img/yerba-baldo.webp" alt="Yerba Baldo">
+    <div class="modal-caption">
+      <h3>Yerba Baldo Premium</h3>
+      <p>Despalada selecta, suave sabor y aroma intenso. Paquete de 1kg sellado al vacío.</p>
+    </div>
+  </div>
+</div>
+
+<div id="modal-yerba2" class="modal">
+  <a href="#" class="modal-close"></a>
+  <div class="modal-content">
+    <img src="../img/reiverde.webp" alt="Rei Verde">
+    <div class="modal-caption">
+      <h3>Yerba Rei Verde Tradicional</h3>
+      <p>Importada de Brasil, proceso de estacionamiento natural. Sabor equilibrado.</p>
+    </div>
+  </div>
+</div>
+
+<div id="modal-yerba3" class="modal">
+  <a href="#" class="modal-close"></a>
+  <div class="modal-content">
+    <img src="../img/reiverdepremium.webp" alt="Rei Verde Premium">
+    <div class="modal-caption">
+      <h3>Yerba Rei Verde Premium</h3>
+      <p>Selección especial de hojas, menor contenido de polvo. Experiencia premium.</p>
+    </div>
+  </div>
+</div>
+
+<div id="modal-yerba4" class="modal">
+  <a href="#" class="modal-close"></a>
+  <div class="modal-content">
+    <img src="../img/yerba-carrusel.webp" alt="Yerba Canarias">
+    <div class="modal-caption">
+      <h3>Yerba Canarias Serena</h3>
+      <p>La preferida de los uruguayos. Presentación de 500g ideal para prueba.</p>
+    </div>
+  </div>
+</div>
   </body>
 </html>

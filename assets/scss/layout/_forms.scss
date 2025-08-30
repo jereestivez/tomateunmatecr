@@ -1,47 +1,46 @@
-/* =============================================
-   COMPONENTES DE FORMULARIOS
-   ============================================= */
+// layout/_forms.scss - 
 @use '../abstracts/variables' as *;
 @use "sass:color";
+
 .form-container {
-  // Posicionamiento
   margin: 2rem auto;
-  
-  // Box Model
   padding: 2rem;
   max-width: 800px;
-  border: 1px solid $color-light-bg;
+  border: 1px solid $color-border;
   border-radius: 8px;
-  
-  // Estilos visuales
-  background-color: color.adjust($color-light-bg, $lightness: 2%);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: $color-light;
+  box-shadow: 0 0.5rem 1rem rgba($color-dark,0.15);
 
-  h1 {
+ h1 {
     color: $color-primary;
-    font-family: $font-headings;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
+    border-bottom: 2px solid $color-accent;
+    padding-bottom: 0.5rem;
   }
 }
 
 .form-group {
-  margin-bottom: 1.2rem;
+  label {
+    color: $text-dark;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
 
   input[type="text"],
   textarea {
     width: 100%;
     padding: 0.8rem;
-    border: 1px solid color.adjust($color-light-bg, $lightness: -10%);
+    border: 2px solid $color-border;
     border-radius: 4px;
     font-family: $font-main;
     font-size: 1rem;
     transition: border-color 0.3s;
+    background-color: white;
 
     &:focus {
-      border-color: $color-primary;
+      border-color: $color-accent;
       outline: none;
+      box-shadow: 0 0 0 0.2rem rgba($color-accent, 0.25);
     }
   }
 }
