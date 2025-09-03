@@ -9,7 +9,7 @@ footer {
   background-color: $color-primary;
   padding: $spacing-md 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   min-height: 120px;
   width: 100%;
@@ -18,7 +18,7 @@ footer {
 
   ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: $spacing-lg;
     margin: 0;
@@ -26,3 +26,16 @@ footer {
     height: 100%;
   }
 }
+
+ // Para móviles reducir espacio entre íconos
+@media (max-width: 768px) {
+  footer ul {
+    gap: 1rem;
+  }
+}
+  
+  
+  // Asegurar centrado vertical perfecto
+  .social-icon {
+    vertical-align: middle;
+  }
