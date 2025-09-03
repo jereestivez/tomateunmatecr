@@ -1,5 +1,3 @@
-/* ----- Hero section ----- */
-
 .hero {
   position: relative;
   text-align: center;
@@ -8,9 +6,21 @@
 
   .hero-content {
     position: relative; 
-    background: #2a7f40; 
-    color: white;
+    background: $color-primary; 
+    color: $text-dark; /* Texto oscuro para contraste */
     padding: 1.5rem;
     margin-top: 1rem;
+    border-radius: $border-radius-lg;
+    
+    h2 {
+      color: $text-dark;
+      margin-bottom: 1rem;
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+    }
+    
+    p {
+      color: $text-dark;
+      font-weight: 500;
+    }
   }
 }

@@ -5,13 +5,14 @@
 $font-main: 'Noto Sans', sans-serif;
 $font-headings: 'Rubik', sans-serif;
 
-// Colores principales
-$color-primary: #1e6b34;
-$color-primary-light: #2a7f40;      
-$color-secondary: #73512a;     
-$color-accent: #c1893d;         
-$color-light: #f8f9fa;          
-$color-dark: #212529;
+// NUEVA PALETA DE COLORES - Verde claro/natural
+$color-primary: #B5C99A;         
+$color-primary-light: #CFE1B9;   
+$color-primary-dark: #8FA87A;    
+$color-secondary: #73512a;       
+$color-accent: #FF9F1C;          
+$color-light: #F8F9FA;           
+$color-dark: #2D3E25;            
 $color-border:#dee2e6;           
 
 // COLORES ADICIONALES - 
@@ -20,7 +21,7 @@ $bg-light: #f9f9f9;
 $bg-dark: #2a2a2a;
 
 // Colores de texto
-$text-dark: #212529;
+$text-dark: #2D3E25;
 $text-light: #ffffff;
 $text-muted: #6c757d;
 
@@ -29,7 +30,7 @@ $bg-light: #ffffff;
 $bg-dark: #343a40;
 $bg-success: #198754;
 
-// Breakpoints (basados en tus media queries)
+// Breakpoints 
 $bp-mobile: 767px;
 $bp-tablet: 1023px;
 $bp-desktop: 1200px;
