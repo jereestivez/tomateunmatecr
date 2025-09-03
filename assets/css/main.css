@@ -680,11 +680,19 @@ footer {
   list-style-type: none;
   background-color: #B5C99A;
   padding: 1.5rem 0;
+  display:flex;
+  justify-content: center;
+  width: 100%;
 }
 footer ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  margin: 0;
 }
 
 .form-container {
