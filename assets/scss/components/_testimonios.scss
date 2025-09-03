@@ -3,7 +3,7 @@
 
 .testimonios {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, $color-light 0%, #f8f9fa 100%);
+  background: $bg-section; // ← CAMBIADO a blanco
   text-align: center;
 
   h2 {

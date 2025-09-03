@@ -8,8 +8,8 @@
   max-width: 800px;
   border: 1px solid $color-border;
   border-radius: 8px;
-  background-color: $color-light;
-  box-shadow: 0 0.5rem 1rem rgba($color-dark,0.15);
+  background-color: $bg-section; // ← CAMBIADO a blanco
+  box-shadow: 0 0.5rem 1rem rgba($color-dark, 0.1); // ← Sombra suave
 
  h1 {
     color: $color-primary;

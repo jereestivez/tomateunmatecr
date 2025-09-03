@@ -3,7 +3,7 @@
 
 .categorias-destacadas {
   padding: 4rem 2rem;
-  background: white;
+  background: $bg-section; // ← CAMBIADO a blanco
   text-align: center;
 
   h2 {
