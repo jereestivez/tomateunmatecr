@@ -1,17 +1,18 @@
-@media (max-width: 767px) {
+@use '../abstracts/variables' as *;
+
+@media (max-width: $bp-mobile) {
   :root {
     font-size: 14px;
   }
-  
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: $bp-tablet) {
   .producto-img {
     max-width: 250px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $bp-desktop) {
   .producto-img {
     max-width: 350px;
   }
@@ -29,6 +30,6 @@
 
 @media (hover: none) {
   .item-galeria:hover {
-    transform: none; // Desactiva hover en táctiles
+    transform: none;
   }
 }

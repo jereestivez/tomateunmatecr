@@ -1,16 +1,10 @@
-/* =============================================
-   FOOTER STYLES
-   ============================================= */
-
-
-$footer-bg-color: #B5C99A;
-$footer-padding: 1.5rem 0;
-$social-icon-gap: 2rem;
+// _footer.scss
+@use '../abstracts/variables' as *;
 
 footer {
   list-style-type: none;
-  background-color: $footer-bg-color;
-  padding: $footer-padding;
+  background-color: $color-primary;
+  padding: $spacing-lg 0;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -18,12 +12,19 @@ footer {
   ul {
     display: flex;
     justify-content: center;
-    gap: $social-icon-gap;
+    gap: $spacing-xl;
     margin: 0; 
     padding: 0; 
     
     li {
       margin: 0;
     }
+  }
+}
+
+// Responsive
+@media (max-width: $bp-mobile) {
+  footer ul {
+    gap: $spacing-lg;
   }
 }

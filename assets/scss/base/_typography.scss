@@ -1,19 +1,19 @@
-/* =============================================
-   TIPOGRAFÍA Y ELEMENTOS BÁSICOS
-   ============================================= */
+
 @use '../abstracts/variables' as *;
 @use "sass:color";
 
 body {
   color: $text-dark;
-  background-color: $bg-light;
+  background-color: $bg-body;
   line-height: 1.6;
+  font-family: $font-main;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: $color-primary;
   font-weight: 700;
   line-height: 1.2;
+  font-family: $font-headings;
 }
 
 p {
@@ -29,6 +29,7 @@ ul {
 
 a {
   color: $color-primary;
+  text-decoration: none;
 
   &:hover {
    color: color.adjust($color-primary, $lightness: -15%);

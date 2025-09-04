@@ -1,21 +1,23 @@
+@use '../abstracts/variables' as *;
+
 .hero {
   position: relative;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: $spacing-xl;
+  margin-bottom: $spacing-xl;
 
   .hero-content {
     position: relative;
-    background: $bg-section; // ← Nuevo color de fondo
+    background: $bg-section;
     color: $text-dark;
-    padding: 1.5rem;
-    margin-top: 1rem;
+    padding: $spacing-lg;
+    margin-top: $spacing-md;
     border-radius: $border-radius-lg;
-    box-shadow: 0 4px 12px rgba($color-dark, 0.1); // ← Añadida sombra
+    box-shadow: 0 4px 12px rgba($color-dark, 0.1);
     
     h2 {
-      color: $color-primary; // ← Verde para el título
-      margin-bottom: 1rem;
+      color: $color-primary;
+      margin-bottom: $spacing-md;
     }
     
     p {

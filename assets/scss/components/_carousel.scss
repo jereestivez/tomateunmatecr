@@ -1,7 +1,9 @@
+@use '../abstracts/variables' as *;
+
 #manualCarousel {
   max-width: 800px; 
-  margin: 2rem auto;
-  border-radius: 10px;
+  margin: $spacing-xl auto;
+  border-radius: $border-radius-lg;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
@@ -19,13 +21,13 @@
       object-fit: contain; 
       width: 100%;
       height: 100%;
-      background-color: #f8f8f8;
+      background-color: $bg-light;
     }
   }
 }
 
 // Media Queries del carrusel
-@media (max-width: 1024px) {
+@media (max-width: $bp-tablet) {
   #manualCarousel {
     max-width: 90%;
   }
@@ -35,11 +37,11 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $bp-mobile) {
   #manualCarousel {
     max-width: 100%;
     border-radius: 0;
-    margin: 1rem 0;
+    margin: $spacing-md 0;
   }
   
   .carousel-inner {

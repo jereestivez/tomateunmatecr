@@ -1,25 +1,14 @@
-
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; 
-  background-color: $bg-body;
-  color: $text-dark;
-}
-
-main {
-  flex: 1;
-}
-
-
 // Abstracts
 @use 'abstracts/variables' as *;
 
 // Base
 @use 'base/reset';
 @use 'base/typography';
+
+// Layout
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/forms';
 
 // Components
 @use 'components/buttons';
@@ -32,11 +21,5 @@ main {
 @use 'components/categorias';
 @use 'components/testimonios';
 
-// Layout
-@use 'layout/header';
-@use 'layout/footer';
-@use 'layout/forms';
-
-
-// Base (responsive)
+// Utilidades
 @use 'base/responsive';
